@@ -42,6 +42,85 @@
     color: white;
 }
 
+.hat-card{
+    height: 350px;
+}
+
+
+
+
+
+/* Animation */
+@keyframes cutting {
+    from {top: -170px;}
+    to {top: 170px;}
+  }
+  @keyframes cutting-2 {
+    from{
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    to{
+        margin-left:50px;
+        margin-top: 100px;
+    }
+  }
+
+
+.capati-animation{
+   margin-left: 100px;
+   margin-top: 50px;
+}
+.capati img{
+    width: 200px;
+    margin-top: -70px;
+    margin-left: 20px;
+    transform: scaleX(-1) rotate(-40deg);
+    position: absolute;
+}
+header:hover .capati img{
+    animation: cutting 0.5s 1 ease-in-out ;
+}
+header:hover .gosto-2 img{
+    width: 50%;
+    animation: cutting-2 0.5s 0.5s 1 ease-in-out ;
+    
+}
+
+.kather-guti img{
+    width: 200px;
+    margin-top: 100px;
+}
+.gosto-1{
+    margin-left: 20px;
+}
+
+.gosto-1, .gosto-2{
+    position: absolute;
+    margin-top: 90px;
+}
+.gosto-1 img{
+    width: 50%;
+}
+.gosto-2 img{
+    width: 50%;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+.goster-tukra img{
+    width: 200px;
+    margin: -50px 0px 0px 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 576px){
     .search-input{
        width: 100%;
