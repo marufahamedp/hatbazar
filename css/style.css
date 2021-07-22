@@ -30,8 +30,8 @@
 /* ----------------------------
             Nav-Bar
 -------------------------------*/
-.user-menu{
-    
+.hat-nav-item{
+    margin-right: 30px;
 }
 .user-menu-body{
     margin-top: 120px;
@@ -57,15 +57,40 @@
     .hat-nav-item{
         margin: 0;
     }
+    .hat-search-from{
+        margin-top: 10px;
+    }
+    .hat-nav-item{
+        margin-right: 0px;
+    }
+
 }
 @media only screen and (min-width: 576px) and (max-width: 768px){
+    .search-input{
+        width: 100%;
+     } 
     .user-menu-body{
         margin-top: 0px;
+    }
+    .hat-search-from{
+        margin-top: 10px;
+    }
+    .hat-nav-item{
+        margin-right: 0px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px){
+    .search-input{
+        width: 100%;
+     } 
     .user-menu-body{
         margin-top: 0px;
+    }
+    .hat-search-from{
+        margin-top: 10px;
+    }
+    .hat-nav-item{
+        margin-right: 0px;
     }
 }
