@@ -1,0 +1,43 @@
+/* --------------------------------
+            Search-Box
+-----------------------------------*/
+
+.search-container{
+    background: #fff;
+    height: 40px;
+    border-radius: 30px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-input{
+     width: 400px;
+    height:40px;
+}
+
+.search-container .search-input{
+    border: none;
+    outline:none;
+
+}
+.search-btn{
+    color: red;
+}
+
+/* ----------------------------
+            Nav-Bar
+-------------------------------*/
+.user-menu{
+    
+}
+.user-menu-body{
+    margin-top: 120px;
+}
+
+.hat-user-menu-list a:hover{
+    background-color: #0A58CA;
+    color: white;
+}
