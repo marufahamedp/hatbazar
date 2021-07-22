@@ -41,3 +41,20 @@
     background-color: #0A58CA;
     color: white;
 }
+
+@media only screen and (max-width: 576px){
+    .search-input{
+       width: 100%;
+    }
+
+    .top-nav{
+        display: none;
+    }
+
+    .user-menu-body{
+        margin-top: 0px;
+    }
+    .hat-nav-item{
+        margin: 0;
+    }
+}
