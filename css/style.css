@@ -34,7 +34,7 @@
     margin-right: 30px;
 }
 .user-menu-body{
-    margin-top: 120px;
+    margin-top: 124px;
 }
 
 .hat-user-menu-list a:hover{
@@ -43,11 +43,18 @@
 }
 
 .hat-card{
-    height: 350px;
+    transition: transform 0.5s ease-in-out;
 }
-
-
-
+.hat-card:hover{
+    transform: scale(1.1);
+}
+.hat-btn{
+    border: 0;
+}
+.hat-btn:hover{
+    background-color: #DC3545;
+    border: 0;
+}
 
 
 /* Animation */
