@@ -1,675 +1,1209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hatbazar</title>
-    <!-- Bootstrap Style -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Fontawesome -->
-    <script src="https://kit.fontawesome.com/2edc80142c.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hatbazar</title>
+  <!-- Bootstrap Style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/2edc80142c.js" crossorigin="anonymous"></script>
+
+  <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
 
 </head>
+
 <body>
-    <header>
-        <div class="top-nav">
-            <nav class="nav top-navbar d-flex justify-content-between">
-                <div class="half nav d-flex align-items-center">
-                 <a class="nav-link  text-danger" aria-current="page" href="#"><i class="fas fa-phone-alt"></i> &nbsp;+8801315560101</a>
-                
-                </div>
-                <div class="half nav d-flex align-items-center">
-                    <a class="nav-link text-danger d-flex align-items-center" aria-current="page" href="#"><i class="fas fa-clock"></i> &nbsp; <iframe src="https://free.timeanddate.com/clock/i7wluq60/n73/fn15/fcdc3545/tt0/tw1/tm1/tb1" frameborder="0" width="191" height="18"></iframe>
-                    </a>
-                   </div>
-               
-                <div class="half nav nav d-flex align-items-center">
-                    <a class="nav-link  text-danger" href="#"><i class="fas fa-envelope"></i> &nbsp; support@hatbazar.com</a>
-                    
-                </div>
-               </nav>
+  <header>
+    <!----------------------------- 
+             Top-Contact-Navbar
+       ----------------------------->
+    <div class="top-nav">
+      <nav class="nav top-navbar d-flex justify-content-between">
+        <div class="half nav d-flex align-items-center">
+          <a class="nav-link  text-danger" aria-current="page" href="#"><i class="fas fa-phone-alt"></i>
+            &nbsp;+8801315560101</a>
+
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-              <a class="navbar-brand mb-1" href="#">
-                <img src="images/logo.png" alt="" width="150">
+        <div class="half nav d-flex align-items-center">
+          <a class="nav-link text-danger d-flex align-items-center" aria-current="page" href="#"><i
+              class="fas fa-clock"></i> &nbsp; <iframe
+              src="https://free.timeanddate.com/clock/i7wluq60/n73/fn15/fcdc3545/tt0/tw1/tm1/tb1" frameborder="0"
+              width="191" height="18"></iframe>
+          </a>
+        </div>
+
+        <div class="half nav nav d-flex align-items-center">
+          <a class="nav-link  text-danger" href="#"><i class="fas fa-envelope"></i> &nbsp; support@hatbazar.com</a>
+
+        </div>
+      </nav>
+    </div>
+
+    <!----------------------------- 
+                  Main-Navbar
+       ----------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand mb-1" href="#">
+          <img src="images/logo.png" alt="" width="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="ms-auto hat-search-from">
+            <div class="search-container bg-light">
+              <input type="text" name="search" placeholder="Search..." class="search-input">
+              <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="ms-auto hat-search-from">
-                    <div class="search-container bg-light">
-                        <input type="text" name="search" placeholder="Search..." class="search-input">
-                        <a href="#" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        </div>
-                  </form>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-1 fs-5 d-flex align-items-center">
-                  <li class="nav-item dropdown hat-nav-item">
-                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      All Products
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Cows</a></li>
-                      <li><a class="dropdown-item" href="#">Goats</a></li>
-                      <li></li>
-                      <li><a class="dropdown-item" href="#">Camels</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item hat-nav-item">
-                    <a class="nav-link text-light" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light fs-2" href="#" 
-                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasRighta" aria-controls="offcanvasRight"
-                    ><i class="fas fa-user-circle"></i></a>
-                    <div class="offcanvas offcanvas-end user-menu-body" tabindex="-1" id="offcanvasRighta" aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                          <h5 id="offcanvasRightLabel" class="text-center">Profile</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="list-group hat-user-menu-list fs-6">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-user"></i> 
-                                    &nbsp;  My Account
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-bell"></i>
-                                    &nbsp;  Notifications
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-inbox"></i>
-                                    &nbsp;  Messages
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-shopping-cart"></i>
-                                    &nbsp;  Cart
-                                </a>
-                                
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-heart"></i>
-                                    &nbsp; My Favorite
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-shopping-basket"></i>
-                                    &nbsp; Order
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <i class="fas fa-cart-plus"></i>
-                                    &nbsp;  Buy Again
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-store"></i>
-                                    &nbsp; My Stor
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-gift"></i>
-                                    &nbsp; Gift Card
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                    <i class="fas fa-sign-in-alt"></i> &nbsp; Sign In
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-user-plus"></i>
-                                &nbsp; Creat Account
-                                </a>
-                              </div>
-                        </div>
-                      </div>
-                  </li>
-                </ul>
-                
-              </div>
             </div>
-          </nav>
-
-          <section class="slider">
-            <div class="container">
-                <div id="carouselExampleControls" class="carousel slide my-1" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                            <div class="row d-flex align-items-center">
-                              <div class="col-lg-7">
-                               <div>
-                                <h1 class="text-danger">Eid Mubarak</h1>
-                                <h1>Qurbani Haat</h1>
-                                <h2>100% Organic Cows, Camels & Goat</h2>
-                                <p class="mb-5 text-secondary">We have 100% organic Cows, Camels & Goat. We provide 100% organic grass and feed to our Cows, Camels & Goat.</p>
-                                <button class="btn btn-danger">Order Now</button>
-                                
-                                </div>
-                              </div>
-                              <div class="col-lg-5">
-                                <div class="capati-animation">
-                                    <div class="gosto-1">
-                                        <img src="images/capati/big-gosto-1.png" alt="">
-                                    </div>
-                                    <div class="capati">
-                                        <img src="images/capati/capati-1.png" alt="">
-                                    </div>
-                                       <div class="gosto-2">
-                                           <img src="images/capati/big-gosto-2.png" alt="">
-                                       </div>
-                                       <div class="kather-guti">
-                                           <img src="images/capati/kather-guri.png" alt="">
-                                       </div>
-                                       <div class="goster-tukra">
-                                           <img src="images/capati/gosto.png" alt="">
-                                       </div>
-                                   </div>
-                              </div>
-                            </div>
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-1 fs-5 d-flex align-items-center">
+            <li class="nav-item dropdown hat-nav-item">
+              <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                All Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#cows">Cows</a></li>
+                <li><a class="dropdown-item" href="#goats">Goats</a></li>
+                <li></li>
+                <li><a class="dropdown-item" href="#camels">Camels</a></li>
+              </ul>
+            </li>
+            <li class="nav-item hat-nav-item">
+              <a class="nav-link text-light position-relative d-flex align-items-center" href="#"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightc" aria-controls="offcanvasRight"><i
+                  class="fas fa-shopping-cart"></i><span class="badge"><span
+                    class="position-absolute top-0 mt-2 translate-middle badge rounded-pill bg-danger">
+                    0
+                  </span>
+                  <samp>$0.00</samp>
+              </a>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightc"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h4 id="offcanvasRightLabel">Shopping Cart</h4>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="body">
+                    <div class="all">
+                      <div class="background d-flex justify-content-center">
+                        <img src="images/no-products-in-cart.png" alt="" width="50%">
                       </div>
-                      <div class="carousel-item">
-                            <div class="row d-flex align-items-center">
-                              <div class="col-lg-7">
-                               <div>
-                                <h1 class="text-danger">Eid Mubarak</h1>
-                                <h1>Qurbani Cows Haat</h1>
-                                <h2>100% Organic Cows</h2>
-                                <p class="mb-5 text-secondary">We have 100% organic Cows. We provide 100% organic grass and feed to our Cows.</p>
-                                <button class="btn btn-danger">Order Now</button>
-                                
-                                </div>
-                              </div>
-                              <div class="col-lg-5">
-                                <div>
-                                    <img src="images/cow/cow-1.png" class="d-block w-100" alt="...">
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="carousel-item">
-                            <div class="row d-flex align-items-center">
-                              <div class="col-lg-7">
-                               <div>
-                                <h1 class="text-danger">Eid Mubarak</h1>
-                                <h1>Qurbani Camels Haat</h1>
-                                <h2>100% Organic Camels</h2>
-                                <p class="mb-5 text-secondary">We have 100% organic Camels. We provide 100% organic feed to our camels.</p>
-                                <button class="btn btn-danger">Order Now</button>
-                                </div>
-                              </div>
-                              <div class="col-lg-5">
-                                <div>
-                                    <img src="images/camel/camel-1.png" class="d-block w-100" alt="...">
-                                </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="carousel-item">
-                            <div class="row d-flex align-items-center">
-                              <div class="col-lg-7">
-                               <div>
-                                <h1 class="text-danger">Eid Mubarak</h1>
-                                <h1>Qurbani Goats Haat</h1>
-                                <h2>100% Organic Goats</h2>
-                                <p class="mb-5 text-secondary">We have 100% organic Goats. We provide 100% organic grass and feed to our Goats</p>
-                                <button class="btn btn-danger">Order Now</button>
-                                </div>
-                              </div>
-                              <div class="col-lg-5">
-                                <div>
-                                    <img src="images/goat/goat-1.png" class="d-block w-100" alt="...">
-                                </div>
-                              </div>
-                            </div>
+                      <div class="details text-center">
+                        <h4>No Product In The Cart.</h4>
+                        <button class="btn btn-danger mt-3 return-btn">Return To Shop</button>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-2" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRighta"
+                aria-controls="offcanvasRight"><i class="fas fa-user-circle"></i></a>
+
+              <!------------------------------------ 
+                                      Offcanvas-Right-Label
+                              --------------------------------------->
+
+              <div class="offcanvas offcanvas-end user-menu-body" tabindex="-1" id="offcanvasRighta"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel" class="text-center">Profile</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="list-group hat-user-menu-list fs-6">
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-user"></i>
+                      &nbsp; My Account
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-bell"></i>
+                      &nbsp; Notifications
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-inbox"></i>
+                      &nbsp; Messages
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRightc" aria-controls="offcanvasRight">
+                      <i class="fas fa-shopping-cart"></i>
+                      &nbsp; Cart
+                    </a>
+
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-heart"></i>
+                      &nbsp; My Favorite
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-shopping-basket"></i>
+                      &nbsp; Order
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <i class="fas fa-cart-plus"></i>
+                      &nbsp; Buy Again
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-store"></i>
+                      &nbsp; My Stor
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-gift"></i>
+                      &nbsp; Gift Card
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action" aria-current="true"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal-sign-in">
+                      <i class="fas fa-sign-in-alt"></i> &nbsp; Sign In
+                    </a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-sign-in" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+
+                            <!-- Sing In From -->
+
+                            <div class="row">
+                              <div class="col-md-10 mx-auto">
+                                <div id="first">
+                                  <div class="myform form ">
+                                    <div class="logo mb-3">
+                                      <div class="col-md-12 text-center">
+                                        <h1>Login</h1>
+                                      </div>
+                                    </div>
+                                    <form action="" name="login">
+                                      <div class="form-group mb-3">
+                                        <label class="mb-2" for="exampleInputEmail1">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                          aria-describedby="emailHelp" placeholder="Enter email">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                        <label class="mb-2" for="exampleInputEmail1">Password</label>
+                                        <input type="password" name="password" id="password" class="form-control"
+                                          aria-describedby="emailHelp" placeholder="Enter Password">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                        <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a>
+                                        </p>
+                                      </div>
+                                      <div class="text-center d-grid">
+                                        <button class=" btn  btn-danger">Login</button>
+                                      </div>
+                                      <div class="col-md-12 ">
+                                        <div class="login-or">
+                                          <hr>
+                                          <p class="text-center">or</p>
+                                          <hr>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <p class="text-center">
+                                          <a href="" class="btn"><i class="fa fa-google-plus">
+                                            </i> Signup using Google
+                                          </a>
+                                        </p>
+                                      </div>
+                                      <div class="form-group">
+                                        <p class="text-center" data-bs-toggle="modal"
+                                          data-bs-target="#exampleModal-creat-account" tabindex="-1">Don't have account?
+                                          <a href="#" id="signup">Sign up here</a></p>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal-creat-account" tabindex="-1"><i class="fas fa-user-plus"></i>
+                      &nbsp; Creat Account
+                    </a>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal-creat-account" tabindex="-1"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Creat Account</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+
+                            <!-- Sing Up From -->
+
+                            <div class="row">
+                              <div class="col-md-10 mx-auto">
+                                <div id="second">
+                                  <div class="myform form ">
+                                    <div class="logo mb-3">
+                                      <div class="col-md-12 text-center">
+                                        <h1>Signup</h1>
+                                      </div>
+                                    </div>
+                                    <form action="#" name="registration">
+                                      <div class="form-group mb-3">
+                                        <label class="mb-1" for="exampleInputEmail1">First Name</label>
+                                        <input type="text" name="firstname" class="form-control" id="firstname"
+                                          aria-describedby="emailHelp" placeholder="Enter Firstname">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                        <label class="mb-1" for="exampleInputEmail1">Last Name</label>
+                                        <input type="text" name="lastname" class="form-control" id="lastname"
+                                          aria-describedby="emailHelp" placeholder="Enter Lastname">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                        <label class="mb-1" for="exampleInputEmail1">Email address</label>
+                                        <input type="email" name="email" class="form-control" id="email"
+                                          aria-describedby="emailHelp" placeholder="Enter email">
+                                      </div>
+                                      <div class="form-group mb-3">
+                                        <label class="mb-1" for="exampleInputEmail1">Password</label>
+                                        <input type="password" name="password" id="password" class="form-control"
+                                          aria-describedby="emailHelp" placeholder="Enter Password">
+                                      </div>
+                                      <div class="d-grid">
+                                        <button type="submit" class=" btn btn-danger">Get Started For Free</button>
+                                      </div>
+                                      <div class="col-md-12 ">
+                                        <div class="login-or">
+                                          <hr>
+                                          <p class="text-center">or</p>
+                                          <hr>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 mb-3">
+                                        <p class="text-center">
+                                          <a href="" class="btn"><i class="fa fa-google-plus">
+                                            </i> Signup using Google
+                                          </a>
+                                        </p>
+                                      </div>
+                                      <div class="col-md-12 ">
+                                        <div class="form-group mb-3">
+                                          <p class="text-center"><a aria-current="true" data-bs-toggle="modal"
+                                              data-bs-target="#exampleModal-sign-in-2" href="#" id="signin">Already have
+                                              an account?</a></p>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal-sign-in-2"
+                                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                          <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                  aria-label="Close"></button>
+                                              </div>
+                                              <div class="modal-body">
+
+                                                <!-- Sing In From -->
+
+                                                <div class="row">
+                                                  <div class="col-md-10 mx-auto">
+                                                    <div id="first">
+                                                      <div class="myform form ">
+                                                        <div class="logo mb-3">
+                                                          <div class="col-md-12 text-center">
+                                                            <h1>Login</h1>
+                                                          </div>
+                                                        </div>
+                                                        <form action="" name="login">
+                                                          <div class="form-group mb-3">
+                                                            <label class="mb-2" for="exampleInputEmail1">Email
+                                                              address</label>
+                                                            <input type="email" name="email" class="form-control"
+                                                              id="email" aria-describedby="emailHelp"
+                                                              placeholder="Enter email">
+                                                          </div>
+                                                          <div class="form-group mb-3">
+                                                            <label class="mb-2"
+                                                              for="exampleInputEmail1">Password</label>
+                                                            <input type="password" name="password" id="password"
+                                                              class="form-control" aria-describedby="emailHelp"
+                                                              placeholder="Enter Password">
+                                                          </div>
+                                                          <div class="form-group mb-3">
+                                                            <p class="text-center">By signing up you accept our <a
+                                                                href="#">Terms Of Use</a></p>
+                                                          </div>
+                                                          <div class="text-center d-grid">
+                                                            <button class=" btn  btn-danger">Login</button>
+                                                          </div>
+                                                          <div class="col-md-12 ">
+                                                            <div class="login-or">
+                                                              <hr>
+                                                              <p class="text-center">or</p>
+                                                              <hr>
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-12 mb-3">
+                                                            <p class="text-center">
+                                                              <a href="" class="btn"><i class="fa fa-google-plus">
+                                                                </i> Signup using Google
+                                                              </a>
+                                                            </p>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <p class="text-center" data-bs-toggle="modal"
+                                                              data-bs-target="#exampleModal-creat-account"
+                                                              tabindex="-1">Don't have account? <a href="#"
+                                                                id="signup">Sign up here</a></p>
+                                                          </div>
+                                                        </form>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!----------------------------- 
+                  Slider
+      ----------------------------->
+
+
+    <section class="slider">
+      <div class="container">
+        <div id="carouselExampleControls" class="carousel slide my-1" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-7">
+                  <div>
+                    <h1 class="text-danger">Eid Mubarak</h1>
+                    <h1>Qurbani Haat</h1>
+                    <h2>100% Organic Cows, Camels & Goat</h2>
+                    <p class="mb-5 text-secondary">We have 100% organic Cows, Camels & Goat. We provide 100% organic
+                      grass and feed to our Cows, Camels & Goat.</p>
+                    <button class="btn btn-danger">Order Now</button>
+
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="capati-animation">
+                    <div class="gosto-1">
+                      <img src="images/capati/big-gosto-1.png" alt="">
+                    </div>
+                    <div class="capati">
+                      <img src="images/capati/capati-1.png" alt="">
+                    </div>
+                    <div class="gosto-2">
+                      <img src="images/capati/big-gosto-2.png" alt="">
+                    </div>
+                    <div class="kather-guti">
+                      <img src="images/capati/kather-guri.png" alt="">
+                    </div>
+                    <div class="goster-tukra">
+                      <img src="images/capati/gosto.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
+            <div class="carousel-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-7">
+                  <div>
+                    <h1 class="text-danger">Eid Mubarak</h1>
+                    <h1>Qurbani Cows Haat</h1>
+                    <h2>100% Organic Cows</h2>
+                    <p class="mb-5 text-secondary">We have 100% organic Cows. We provide 100% organic grass and feed to
+                      our Cows.</p>
+                    <button class="btn btn-danger">Order Now</button>
 
-    </header>
-
-<main>
-    <section class="catagorys my-5">
-        <div class="container">
-            <div class="row g-2">
-                <div class="col-lg-4 col-md-6">
-                  <a href="" class="text-decoration-none">
-                    <div class="p-3 border bg-danger text-light  d-flex align-items-center justify-content-center rounded-3">
-                        <h2>Cows</h2>
-                        <img class="ms-5" src="images/cow/cow-2.png" alt="" width="100">
-                        </div>
-                  </a>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                 <a href="" class="text-decoration-none">
-                    <div class="p-3 border bg-primary text-light  d-flex align-items-center justify-content-center rounded-3">
-                        <h2>Camels</h2>
-                        <img class="ms-5" src="images/camel/camel-2.png" alt="" width="100">
-                        </div>
-                 </a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="" class="text-decoration-none">
-                    <div class="p-3 border bg-success text-light  d-flex align-items-center justify-content-center rounded-3">
-                        <h2>Goats</h2>
-                        <img class="ms-5" src="images/goat/goat-2.png" alt="" width="100">
-                        </div>
-                  </a>
+                <div class="col-lg-5">
+                  <div>
+                    <img src="images/cow/cow-1.png" class="d-block w-100" alt="...">
+                  </div>
                 </div>
               </div>
-        </div>
-    </section>
-
-    <section class="cows my-5">
-        <div class="container">
-          <div class="cows-group my-5 d-flex align-items-center justify-content-between">
-            <h1 class="text-danger">Cows</h1>
-            <a class="text-decoration-none text-danger" href="#"><span>See All</span></a>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-7">
+                  <div>
+                    <h1 class="text-danger">Eid Mubarak</h1>
+                    <h1>Qurbani Camels Haat</h1>
+                    <h2>100% Organic Camels</h2>
+                    <p class="mb-5 text-secondary">We have 100% organic Camels. We provide 100% organic feed to our
+                      camels.</p>
+                    <button class="btn btn-danger">Order Now</button>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div>
+                    <img src="images/camel/camel-1.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex align-items-center">
+                <div class="col-lg-7">
+                  <div>
+                    <h1 class="text-danger">Eid Mubarak</h1>
+                    <h1>Qurbani Goats Haat</h1>
+                    <h2>100% Organic Goats</h2>
+                    <p class="mb-5 text-secondary">We have 100% organic Goats. We provide 100% organic grass and feed to
+                      our Goats</p>
+                    <button class="btn btn-danger">Order Now</button>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div>
+                    <img src="images/goat/goat-1.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <hr class="mb-5">
-            <div class="row  g-4 mb-5">
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-3.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Australian Cow</h4>
-                        <h5 class="card-text text-danger">$4124.34(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-4.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Indian Cow</h4>
-                        <h5 class="card-text text-danger">$2540(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-5.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Deshi Cow</h4>
-                        <h5 class="card-text text-danger">$5029(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-6.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Indian Cow</h4>
-                        <h5 class="card-text text-danger">$3544(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            <div class="row  g-4">
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-7.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Indian Cow</h4>
-                        <h5 class="card-text text-danger">$1954(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-8.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Australian Cow</h4>
-                        <h5 class="card-text text-danger">$3040(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-9.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Deshi Cow</h4>
-                        <h5 class="card-text text-danger">$5529(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <a href="#" class="text-decoration-none">
-                    <div class="card shadow hat-card">
-                      <img src="images/cow/cow-10.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h4 class="card-title text-dark">Indian Cow</h4>
-                        <h5 class="card-text text-danger">$2500(Only)</h5>
-                        <div class="d-grid gap-2">
-                          <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                          <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
+      </div>
     </section>
-    <section class="Camels my-5">
+  </header>
+
+  <main>
+
+
+    <!----------------------------- 
+            Catagorys
+  ----------------------------->
+
+    <section class="catagorys my-5">
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-lg-4 col-md-6">
+            <a href="#cows" class="text-decoration-none">
+              <div class="p-3 border bg-danger text-light  d-flex align-items-center justify-content-center rounded-3">
+                <h2>Cows</h2>
+                <img class="ms-5" src="images/cow/cow-2.png" alt="" width="100">
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#camels" class="text-decoration-none">
+              <div class="p-3 border bg-primary text-light  d-flex align-items-center justify-content-center rounded-3">
+                <h2>Camels</h2>
+                <img class="ms-5" src="images/camel/camel-2.png" alt="" width="100">
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <a href="#goats" class="text-decoration-none">
+              <div class="p-3 border bg-success text-light  d-flex align-items-center justify-content-center rounded-3">
+                <h2>Goats</h2>
+                <img class="ms-5" src="images/goat/goat-2.png" alt="" width="100">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!----------------------------- 
+              Cows
+  ----------------------------->
+
+    <section id="cows" class="cows my-5">
+      <div class="container">
+        <div class="cows-group my-5 d-flex align-items-center justify-content-between">
+          <h1 class="text-danger">Cows</h1>
+          <a class="text-decoration-none text-danger" href="#"><span>See All</span></a>
+        </div>
+        <hr class="mb-5">
+        <div class="row  g-4 mb-5">
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Australian Cow</h4>
+                  <h5 class="card-text text-danger">$4124.34(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Cow</h4>
+                  <h5 class="card-text text-danger">$2540(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Deshi Cow</h4>
+                  <h5 class="card-text text-danger">$5029(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Cow</h4>
+                  <h5 class="card-text text-danger">$3544(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row  g-4">
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Cow</h4>
+                  <h5 class="card-text text-danger">$1954(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Australian Cow</h4>
+                  <h5 class="card-text text-danger">$3040(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Deshi Cow</h4>
+                  <h5 class="card-text text-danger">$5529(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/cow/cow-10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Cow</h4>
+                  <h5 class="card-text text-danger">$2500(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!----------------------------- 
+            Camels
+  ----------------------------->
+
+
+    <section id="camels" class="Camels my-5">
       <div class="container">
         <div class="Camels-group my-5 d-flex align-items-center justify-content-between">
           <h1 class="text-danger">Camels</h1>
           <a class="text-decoration-none text-danger" href="#"><span>See All</span></a>
         </div>
         <hr class="mb-5">
-          <div class="row  g-4 mb-5">
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Arabian Camel</h4>
-                      <h5 class="card-text text-danger">$4124.34(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a4.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Indian Camel</h4>
-                      <h5 class="card-text text-danger">$2540(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a5.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Creek Camel</h4>
-                      <h5 class="card-text text-danger">$5029(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a6.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Indian Camel</h4>
-                      <h5 class="card-text text-danger">$3544(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          <div class="row  g-4">
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a7.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Bactrian Camel</h4>
-                      <h5 class="card-text text-danger">$1954(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a8.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Creek Camel</h4>
-                      <h5 class="card-text text-danger">$3040(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a9.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Bactrian Camel</h4>
-                      <h5 class="card-text text-danger">$5529(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                <a href="#" class="text-decoration-none">
-                  <div class="card shadow hat-card">
-                    <img src="images/camel/camel-a10.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h4 class="card-title text-dark">Creek Camel</h4>
-                      <h5 class="card-text text-danger">$2500(Only)</h5>
-                      <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                        <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-      </div>
-  </section>
-  <section class="Goats my-5">
-    <div class="container">
-      <div class="Goats-group my-5 d-flex align-items-center justify-content-between">
-        <h1 class="text-danger">Goats</h1>
-        <a class="text-decoration-none text-danger" href="#"><span>See All</span></a>
-      </div>
-      <hr class="mb-5">
         <div class="row  g-4 mb-5">
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Arabian Goats</h4>
-                    <h5 class="card-text text-danger">$412(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Arabian Camel</h4>
+                  <h5 class="card-text text-danger">$4124.34(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Indian Goats</h4>
-                    <h5 class="card-text text-danger">$224(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a5.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Deshi Goats</h4>
-                    <h5 class="card-text text-danger">$302(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a6.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Indian Goats</h4>
-                    <h5 class="card-text text-danger">$154(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Camel</h4>
+                  <h5 class="card-text text-danger">$2540(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Creek Camel</h4>
+                  <h5 class="card-text text-danger">$5029(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Camel</h4>
+                  <h5 class="card-text text-danger">$3544(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
         <div class="row  g-4">
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a7.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Indian Goats</h4>
-                    <h5 class="card-text text-danger">$195(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Bactrian Camel</h4>
+                  <h5 class="card-text text-danger">$1954(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a8.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Deshi Goats</h4>
-                    <h5 class="card-text text-danger">$304(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a9.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Indian Goats</h4>
-                    <h5 class="card-text text-danger">$252(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <a href="#" class="text-decoration-none">
-                <div class="card shadow hat-card">
-                  <img src="images/goat/goat-a10.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title text-dark">Deshi Goats</h4>
-                    <h5 class="card-text text-danger">$250(Only)</h5>
-                    <div class="d-grid gap-2">
-                      <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To Cart</a>
-                      <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My Favorite</a>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Creek Camel</h4>
+                  <h5 class="card-text text-danger">$3040(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Bactrian Camel</h4>
+                  <h5 class="card-text text-danger">$5529(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/camel/camel-a10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Creek Camel</h4>
+                  <h5 class="card-text text-danger">$2500(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!----------------------------- 
+              Goats
+  ----------------------------->
+
+
+
+    <section id="goats" class="Goats my-5">
+      <div class="container">
+        <div class="Goats-group my-5 d-flex align-items-center justify-content-between">
+          <h1 class="text-danger">Goats</h1>
+          <a class="text-decoration-none text-danger" href="#"><span>See All</span></a>
+        </div>
+        <hr class="mb-5">
+        <div class="row  g-4 mb-5">
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Arabian Goats</h4>
+                  <h5 class="card-text text-danger">$412(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Goats</h4>
+                  <h5 class="card-text text-danger">$224(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a5.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Deshi Goats</h4>
+                  <h5 class="card-text text-danger">$302(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Goats</h4>
+                  <h5 class="card-text text-danger">$154(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row  g-4">
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Goats</h4>
+                  <h5 class="card-text text-danger">$195(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a8.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Deshi Goats</h4>
+                  <h5 class="card-text text-danger">$304(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a9.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Indian Goats</h4>
+                  <h5 class="card-text text-danger">$252(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="#" class="text-decoration-none">
+              <div class="card shadow hat-card">
+                <img src="images/goat/goat-a10.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title text-dark">Deshi Goats</h4>
+                  <h5 class="card-text text-danger">$250(Only)</h5>
+                  <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-dark hat-btn" type="button"><i class="fas fa-shopping-cart"></i> Add To
+                      Cart</a>
+                    <a href="#" class="btn hat-btn btn-dark " type="button"><i class="fas fa-heart"></i> Add To My
+                      Favorite</a>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!----------------------------- 
+            Subscribe
+  ----------------------------->
+<section class="subscribe my-5 bg-success py-5">
+
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="all">
+      <h4 class="text-center ">JOIN OUR NEWSLETTER NOW</h4>
+    <div class="input-group mb-3 d-flex align-items-center">
+      <input type="text" class="form-control hat-form" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn hat-form btn-danger ">SUBSCRIBE</button>
     </div>
+    <h6>Will be used in accordance with our <a href="" class="text-decoration-none text-light">Privacy Policy</a></h6>
+    </div>
+  </div>
+
 </section>
 
-</main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </main>
+
+
+
+  <!----------------------------- 
+              Footers
+  ----------------------------->
+
+  <footer class="bg-dark p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 border-end border-light">
+          <div class="hatlogo">
+            <img src="images/logo.png" alt="" width="100%">
+          </div>
+          <br>
+          <div class="details">
+            <h5 class="text-light">Qurbani Haat 100% Organic Cows, Camels & Goat</h5> <br>
+            <p class="text-light">We have 100% organic Cows, Camels & Goat. We provide 100% organic grass and feed to
+              our Cows, Camels & Goat.</p>
+          </div>
+          <address class="text-light mt-3">
+            <p>
+              <i class="fas fa-envelope"></i> &nbsp; support@hatbazar.com <br>
+              <i class="fas fa-phone-alt"></i> &nbsp;+8801315560101 <br>
+              <i class="fas fa-globe"></i> &nbsp; www.hatbazar.com <br>
+              <i class="fas fa-location-arrow"></i> &nbsp; Ashulia, Savar, Dhaka.
+            </p>
+          </address>
+        </div>
+        <div class="col-lg-3 border-end border-light">
+          <div class="title text-light">
+            <h2>Recent Products</h2>
+          </div>
+          <div class="card mb-2 pointer border-0">
+            <div class="row g-0 d-flex align-items-center bg-dark text-light">
+              <div class="col-md-6 col-lg-4">
+                <img src="images/cow/cow-3.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6 col-lg-8">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Australian Cow</h5>
+                  <p class="text-danger">$4124.34(Only)</p>
+                  <a class="btn btn-danger btn-sm">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-2 pointer border-0">
+            <div class="row g-0 d-flex align-items-center bg-dark text-light">
+              <div class="col-md-6 col-lg-4">
+                <img src="images/cow/cow-4.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6 col-lg-8">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Indian Cow</h5>
+                  <p class="text-danger">
+                    $2540(Only)</p>
+                  <a class="btn btn-danger btn-sm">Buy Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="text-decoration-none">
+            <h4 class="text-light text-center">See More</h4>
+          </a>
+        </div>
+        <div class="col-lg-3 border-end border-light">
+          <div class="titile">
+            <h2 class="text-light">Our Stores</h2>
+          </div>
+          <ul class="list-group hat-list">
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Dhaka
+              <span class="badge rounded-pill hat-number">20</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Barisal
+              <span class="badge rounded-pill hat-number">15</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Chittagong
+              <span class="badge rounded-pill hat-number">14</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Khulna
+              <span class="badge rounded-pill hat-number">18</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Mymensingh
+              <span class="badge rounded-pill hat-number">19</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Rajshahi
+              <span class="badge rounded-pill hat-number">13</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Rangpur
+              <span class="badge rounded-pill hat-number">12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center pointer">
+              Sylhet
+              <span class="badge rounded-pill hat-number">11</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <div class="title">
+            <h2 class="text-light">
+              Catagories
+            </h2>
+          </div>
+          <div class="row g-2">
+            <div class="col">
+              <a href="#cows" class="text-decoration-none">
+                <div class="p-3 bg-danger text-light  d-flex align-items-center justify-content-center rounded-3">
+                  <h2>Cows</h2>
+                  <img class="ms-5" src="images/cow/cow-2.png" alt="" width="70">
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#camels" class="text-decoration-none">
+                <div class="p-3 bg-primary text-light  d-flex align-items-center justify-content-center rounded-3">
+                  <h2>Camels</h2>
+                  <img class="ms-5" src="images/camel/camel-2.png" alt="" width="70">
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="#goats" class="text-decoration-none">
+                <div class="p-3 bg-success text-light  d-flex align-items-center justify-content-center rounded-3">
+                  <h2>Goats</h2>
+                  <img class="ms-5" src="images/goat/goat-2.png" alt="" width="70">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <section class="copyright py-1 bg-danger
+">
+    <div class="copyright text-center text-light fs-5">
+      <small>Copyright <i class="far fa-copyright"></i> 2021 <a href="#"
+          class="text-decoration-none text-light">hatbazar.com</a></small>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

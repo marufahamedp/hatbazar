@@ -33,14 +33,31 @@
 .hat-nav-item{
     margin-right: 30px;
 }
-.user-menu-body{
-    margin-top: 124px;
-}
 
-.hat-user-menu-list a:hover{
-    background-color: #0A58CA;
+
+.hat-user-menu-list > a:hover{
+    background-color: #DC3545;
     color: white;
 }
+
+.return-btn:focus{
+    box-shadow: none;
+}
+
+.background img{
+    opacity: 0.1;
+}
+
+
+.hat-form:focus{
+    box-shadow: none;
+}
+
+
+/* ----------------------------
+        Product-Cards
+-------------------------------*/
+
 
 .hat-card{
     transition: transform 0.5s ease-in-out;
@@ -57,7 +74,9 @@
 }
 
 
-/* Animation */
+/* --------------------------------
+            Animation
+-------------------------------- */
 @keyframes cutting {
     from {top: -170px;}
     to {top: 170px;}
@@ -73,7 +92,9 @@
     }
   }
 
-
+/* --------------------------------
+            Slider-1
+-------------------------------- */
 .capati-animation{
    margin-left: 100px;
    margin-top: 50px;
@@ -120,12 +141,36 @@ header:hover .gosto-2 img{
 
 
 
+.pointer{
+    cursor: pointer;
+}
+.hat-list li{
+    background-color: #212529;
+    color: white;
+}
+.hat-list li:hover{
+    background-color: #DC3545;
+}
+.hat-number{
+    background-color: #DC3545;
+    color: white;
+}
+.hat-list li:hover .hat-number {
+    background-color: white;
+    color: #212529;
+}
 
 
 
+.hat-footer-product{
+    text-align: center;
+}
 
 
 
+/* --------------------------------
+            Media-Quearis
+-------------------------------- */
 
 
 @media only screen and (max-width: 576px){
